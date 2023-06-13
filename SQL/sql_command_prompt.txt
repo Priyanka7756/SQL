@@ -1,0 +1,16 @@
+open command prompt enter- cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+connect to mysql database : mysql -u root -p  (give password)  
+set global local_infile=1;
+quit;
+mysql --local-infile=1 -u root -p
+give password
+show databases;
+use database test;
+show tables;
+select count(*) from athlete_events;
+
+LOAD DATA LOCAL INFILE 'C:\\Users\\CITS\\Downloads\\movie5.csv'
+INTO TABLE move
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
